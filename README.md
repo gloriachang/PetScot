@@ -11,7 +11,7 @@ https://github.com/user-attachments/assets/97bfe4ba-20ac-4fb0-ab86-58d5800cd556
 - Personalized AI-generated quests using the Claude API
 - Academic, professional, social, and self-improvement goal generation
 - Task completion, points, and leveling system
-- Persistent user profile data
+- User profile state used to personalize generated tasks and quests
 - Multi-page Unity UI and navigation
 - API error handling with fallback quests
 
