@@ -26,32 +26,22 @@ https://github.com/user-attachments/assets/97bfe4ba-20ac-4fb0-ab86-58d5800cd556
 
 ## Architecture
 
-```text
-User Onboarding
-      |
-      v
-Player Profile Data
-      |
-      v
-QuestGenerator
-      |
-      +----> Claude API
-      |         |
-      |         v
-      |    Generated Quests
-      |
-      v
-Unity UI
-      |
-      v
-Task / Quest Completion
-      |
-      v
-TaskManager
-      |
-      v
-Points + Level Progression
-```
+flowchart TD
+    A[User] --> B[Unity UI]
+
+    B --> C[PlayerData]
+    B --> D[TaskManager]
+    B --> E[NavigationManager]
+
+    C --> F[QuestGenerator]
+
+    F -->|HTTPS / JSON| G[Claude API]
+    G -->|Generated quests| F
+
+    F --> H[Quest UI]
+
+    H --> D
+    D --> I[Points & Levels]
 
 ## Core Components
 
