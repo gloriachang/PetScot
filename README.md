@@ -26,6 +26,7 @@ https://github.com/user-attachments/assets/97bfe4ba-20ac-4fb0-ab86-58d5800cd556
 
 ## Architecture
 
+```mermaid
 flowchart TD
     A[User] --> B[Unity UI]
 
@@ -42,6 +43,7 @@ flowchart TD
 
     H --> D
     D --> I[Points & Levels]
+```
 
 ## Core Components
 
