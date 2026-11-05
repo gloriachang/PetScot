@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class QuestGenerator : MonoBehaviour
 {
-    //private string apiKey;
+    [SerializeField] private string apiKey;
     private string apiUrl = "https://api.anthropic.com/v1/messages";
 
     [Header("Quest Toggles")]

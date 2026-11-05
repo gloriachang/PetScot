@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class TaskGenerator : MonoBehaviour
 {
-    //private string apiKey;
+    [SerializeField] private string apiKey;
     private string apiUrl = "https://api.anthropic.com/v1/messages";
 
     public TextMeshProUGUI task1Text;
